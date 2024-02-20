@@ -40,10 +40,9 @@ with col2:
    st.subheader("Función de activación")
    func = st.selectbox(
     'Elige la funación de activación',
-    ('Tangente hiperbólica', 'Sigmoide', 'ReLU'), key = 4)
+    ('ReLU', 'Tangente', 'Sigmoide'), key = 4)
 
 if st.button('Calcular salida', key = 7):
     n = Neuron(weights=weights, bias=bias, func=func.lower())
     output = n.run(input_data=inputs)
     st.write(f"La salida de la neurona es {output}")
-

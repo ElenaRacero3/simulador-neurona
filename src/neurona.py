@@ -24,10 +24,10 @@ class Neuron:
         return max(0, x)
 
     @staticmethod
-    def __sigmoid(x):
+    def __sigmoide(x):
         return 1 / (1 + np.exp(-x))
 
     @staticmethod
-    def __tanh(x):
+    def __tangente(x):
         return np.tanh(x)
 
